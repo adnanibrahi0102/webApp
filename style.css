@@ -1,0 +1,412 @@
+/* importing fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
+/* setting body margin padding border box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* setting global variables */
+:root {
+  --primary-text-color: #183b56;
+  --secondar-text-color: #577592;
+  --accent-color-dark: #1d69a3;
+  --accent-color: #2294ed;
+  --padding-inline-section: 20px;
+}
+/* setting body font */
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+/* setting font size for h1,h2,h3,p,a */
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  color: var(--secondar-text-color);
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+.smallbold-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+/* setting size for a container which i used in all blocks of webpage */
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+/* setting up of banner */
+.banner-text {
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+}
+.top-banner {
+  background-color: rgb(216, 17, 163);
+  /*  add background image */
+  background-image: url(https://images.unsplash.com/photo-1568301956237-25a54f5f0d21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+}
+/* creating a flex class */
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* creating a hover links class */
+.hover-links {
+  color: var(--primary-text-color);
+}
+.hover-link:hover {
+  color: black;
+  transition: 0.2s ease-out;
+}
+/* adjusting company logo image */
+.company-logo img {
+  height: 40px;
+  border-radius: 50%;
+}
+/* setting up of navbar */
+.main-nav {
+  justify-content: space-between;
+  height: 60px;
+  position: relative;
+}
+.main-nav{
+  overflow: initial;
+}
+.nav-links {
+  flex-basis: 730px;
+}
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+.nav-toggle{
+  display: none;
+}
+/*  creating a button  */
+.secondary-btn {
+  background-color: var(--accent-color);
+  border: 0.5px solid var(--primary-text-color);
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondar-text-color);
+  transition: 0.2s ease-out;
+}
+
+.secondary-btn:hover {
+  background-color: var(--accent-color-dark);
+}
+/* creating a 2nd button */
+.primary-btn {
+  background-color: var(--accent-color);
+  border: 0.5px solid var(--primary-text-color);
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondar-text-color);
+  transition: 0.2s ease-out;
+}
+.primary-btn:hover {
+  background-color: var(--accent-color-dark);
+}
+/* creating a third button */
+.third-btn {
+  background-color: rgb(190, 67, 67);
+  border: 0.5px solid black;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 700;
+  color: black;
+  box-shadow: 0 0 2px var(aqua);
+  transition: 0.2s ease-out;
+  margin: 20px;
+}
+.third-btn:hover {
+  background-color: red;
+}
+/* header section */
+header {
+  padding: 50px var(--padding-inline-section) 0;
+}
+.header-section {
+  justify-content: center;
+  gap: 50px;
+}
+.header-right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+}
+.header-left {
+  max-width: 40vw;
+}
+.header-left h1 {
+  margin-top: 20px;
+}
+/* company section */
+.logos img {
+  width: 100px;
+  height: 50px;
+  border-radius: 30%;
+  align-items: center;
+}
+.logos {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.small-text {
+  text-align: center;
+  margin-block: 30px;
+  color: var(--primary-text-color);
+}
+/* features section started  */
+.features-header {
+  text-align: center;
+}
+.features-section {
+  padding: 80px var(--padding-inline-section) 0;
+}
+.forth-btn {
+  background-color: aqua;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: black;
+  margin-top: 20px;
+}
+.forth-btn:hover {
+  color: yellow;
+  background-color: black;
+}
+.features-card img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.features-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+.features-card {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  text-align: center;
+}
+/* big feature section started */
+.big-faetures-section {
+  padding: 30px var(--padding-inline-section) 0;
+}
+.big-feature-container {
+  gap: 250px;
+}
+/* it was  a bug */
+ #big-feature-bug{ 
+  flex-direction: row-reverse; 
+
+}
+.feature-img img {
+  width: 100%;
+  border-radius: 40%;
+}
+.feature-des {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.features-header {
+  margin-top: 50px;
+}
+/* example section started */
+.exmaples-area {
+  justify-content: space-between;
+  margin-block: 30px;
+  flex-wrap: wrap;
+}
+
+.example-card {
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background-color: black;
+  background-image: linear-gradient(rgba(17, 207, 11, 0.1), rgb(0, 0, 0, 0.8)),
+    url(https://images.unsplash.com/photo-1597239450996-ea7c2c564412?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 8px;
+  transition: 0.2s ease-out;
+}
+.example-card:hover {
+  box-shadow: 0 0 10px gold;
+}
+.card-txt {
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  position: absolute;
+  color: white;
+}
+/* cta setion started */
+.cta-section-container {
+  flex-direction: column;
+  gap: 30px;
+}
+.cta-section {
+  background-image: linear-gradient(rgba(233, 16, 197, 0.2), rgb(0, 0, 0, 0.8)),
+    url(https://plus.unsplash.com/premium_photo-1673137880762-46320e8b8e16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.cta-section-container p {
+  color: black;
+  font-style: italic;
+}
+/* footer started */
+.link-col {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.foot-cont {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer {
+  padding-block: 80px;
+  background-image: linear-gradient(
+    rgba(80, 209, 159, 0.514),
+    rgb(0, 0, 0, 0.8)
+  );
+}
+/* subfooter started */
+.subfooter {
+  background-color: black;
+  padding: var(--padding-inline-section);
+}
+.subfoot-cont {
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+}
+.subfoot-cont a {
+  color: aliceblue;
+}
+.subfoot-cont a:hover {
+  color: yellow;
+}
+
+@media  screen and (max-width:991px) {
+  .nav-toggle{
+    display: block;
+    margin-right: 20px;
+  }
+  .nav-links ul{
+    flex-direction: column;
+   
+  }
+  /* this peice of code is for hamburger icon */
+  .nav-links{
+    position: absolute;
+    background-color: white;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    padding-block: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  .nav-links .active{
+    left: 0;
+  }
+  .example-card{
+    width: 45%;
+  }
+  .exmaples-area{
+    gap: 20px;
+
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+}
+@media screen and (max-width:767px) {
+  .third-btn{
+    width: 100%;
+  }
+  .forth-btn{
+    width: 100%;
+    text-align: center;
+  }
+  .header-section{
+    flex-direction: column-reverse;
+  }
+  
+  .header-left{
+    width: 100vw;
+    text-align: center;
+  }
+  .features-card{
+    max-width: calc(50% - 10px);
+  }
+  
+  .feature-img img{
+    width: 100%;
+  }
+  .big-feature-container,#big-feature-bug{
+    flex-direction: column;
+  }
+  .foot-cont{
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+  }
+  .link-col{
+    align-items: stretch;
+  }
+  
+}
+@media  screen and (max-width:479px) {
+  :root{
+    --padding-inline-section: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  
+}
+p{
+  font-size: 1rem;
+}
+}
+
